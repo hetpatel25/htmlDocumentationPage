@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+
+<body>
+    <main id="main-doc">
+
+        <!-- left- nav bar -->
+        <nav id="navside">
+            <header><img src="img/html_logo.png" alt="html_logo">
+                <h1>HTML Documentation</h1>
+            </header>
+            <ul>
+                <li> <a href="#introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#prerequisites" class="nav-link">Prerequisites</a></li>
+                <li><a href="#start_html" class="nav-link">Getting started with HTML</a></li>
+                <li><a href="#elements" class="nav-link">Elements</a></li>
+                <li><a href="#attributes" class="nav-link">Attributes</a></li>
+                <li><a href="#comments" class="nav-link">Comments</a></li>
+                <li><a href="#layout" class="nav-link">HTML Layout</a></li>
+                <li><a href="#example" class="nav-link">Code Example</a></li>
+                <li><a href="#references" class="nav-link">References</a></li>
+                <li>
+                    <p> Created by Het Patel</p>
+                    <p>*This is not official documentation page of html. </p>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Top- navbar -->
+        <div class="topnav mobilenav">
+
+            <h1><a href="#" class="home"><img src="img/html_logo.png" alt="html_logo">HTML Documentation</a></h1>
+
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#introduction" class="nav-link" href="javascript:void(0);"
+                    onclick="clickLinks()">Introduction</a>
+                <a href="#prerequisites" class="nav-link" href="javascript:void(0);"
+                    onclick="clickLinks()">Prerequisites</a>
+                <a href="#start_html" class="nav-link" href="javascript:void(0);" onclick="clickLinks()">Getting started
+                    with HTML</a>
+                <a href="#elements" class="nav-link" href="javascript:void(0);" onclick="clickLinks()">Elements</a>
+                <a href="#attributes" class="nav-link" href="javascript:void(0);" onclick="clickLinks()">Attributes</a>
+                <a href="#comments" class="nav-link" href="javascript:void(0);" onclick="clickLinks()">Comments</a>
+                <a href="#layout" class="nav-link" href="javascript:void(0);" onclick="clickLinks()">HTML Layout</a>
+                <a href="#example" class="nav-link" href="javascript:void(0);" onclick="clickLinks()">Code Example</a>
+                <a href="#references" class="nav-link" href="javascript:void(0);" onclick="clickLinks()">References</a>
+
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <!-- Sections for Topic wise content -->
+
+        <section role="region" aria-labelledby="introduction">
+            <header id="introduction">
+                <h2>Introduction</h2>
+            </header>
+            <p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages.
+                HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell
+                the browser how to display the content.</p>
+            <p>"Hypertext" refers to links that connect web pages to one another, either within a single website or
+                between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and
+                linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+        </section>
+
+
+        <section role="region" aria-labelledby="prerequisites">
+            <header>
+                <h2 id="prerequisites">Prerequisites</h2>
+            </header>
+
+            <ul>
+                <li>There are no formal prerequisites for learning HTML & CSS, but students should be comfortable
+                    using computers and navigating files and applications before learning coding skills.
+                </li>
+                <li>Since HTML & CSS is often a student’s first coding language, they should be familiar with how
+                    much of a technical process coding is and should familiarize themselves with the day-to-day work
+                    of a programmer.
+                </li>
+            </ul>
+
+        </section>
+
+        <section role="region" aria-labelledby="start_html">
+
+            <header id="start_html">
+                <h2>Getting started with HTML</h2>
+            </header>
+
+            <h3>So What is html ?</h3>
+            <p>HTML is a markup language that defines the structure of your content. HTML consists of a series of
+                elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain
+                way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can
+                italicize words, can make the font bigger or smaller, and so on. For example, take the following line of
+                content:</p>
+
+            <code class="code">
+                My cat is very grumpy
+            </code>
+            <p>If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in
+                paragraph tags:</p>
+
+            <code class="code">
+                &#60;p&#62; My cat is very grumpy &#60;/p&#62;
+            </code>
+
+        </section>
+
+        <section role="region" aria-labelledby="elements">
+            <header id="elements">
+                <h2>Elements</h2>
+            </header>
+
+            <h3>What's in the head? Metadata in HTML</h3>
+            <p>The head of an HTML document is the part that is not displayed in the web browser when the page is
+                loaded. It contains information such as the page &#60;title&#62;, links to CSS (if you choose to style
+                your HTML
+                content with CSS), links to custom favicons, and other metadata (data about the HTML, such as the
+                author, and important keywords that describe the document). Web browsers use information contained
+                in the head to render the HTML document correctly. In this article we'll cover all of the above and
+                more, in order to give you a good basis for working with markup.</p>
+            <code class="code">
+                &#60;head&#62;<br>
+                &#60;meta charset="utf-8" /&#62;<br>
+                &#60;title&#62;My test page&#60;/title&#62;<br>
+                &#60;/head&#62;
+            </code>
+            <h3>The &#60;meta&#62; element</h3>
+            <p>Metadata: the
+                &#60;meta&#62; element
+                Metadata is data that describes data, and HTML has an "official" way of adding metadata to a document —
+                the &#60;meta&#62; element. Of course, the other stuff we are talking about in this article could also
+                be thought of
+                as metadata too. There are a lot of different types of &#60;meta&#62; elements that can be included in
+                your page's
+                &#60;head&#62;, but we won't try to explain them all at this stage, as it would just get too confusing.
+                Instead,
+                we'll explain a few things that you might commonly see, just to give you an idea.
+            </p>
+
+            <code class="code">
+                &#60;meta charset="utf-8"/&#62;
+
+            </code>
+
+            <ul>
+                <li><b>&#60;body&#62;: </b>The &#60;body&#62; element defines the document's body.</li>
+                <li><b>Heading elements: </b>HTML headings are defined with the &#60;h1&#62; to &#60;h6&#62; tags.
+                    &#60;h1&#62; defines the most
+                    important heading. &#60;h6&#62; defines the least important heading.</li>
+                <li><b>&#60;br&#62;: </b>The &#60;br&#62; tag defines a line break, and is an empty element without a
+                    closing tag:</li>
+                <li><b>&#60;img&#62;: </b>The &#60;img&#62; tag is used to embed an image in an HTML page.</li>
+                <li><b>&#60;a&#62;: </b>The &#60;a&#62; tag defines a hyperlink, which is used to link from one page to
+                    another.
+                    The most important attribute of the &#60;a&#62; element is the href attribute, which indicates the
+                    link's destination.</li>
+                <li><b>&#60;div&#62;: </b>The &#60;div&#62; tag defines a division or a section in an HTML document.
+                    The &#60;div&#62; tag is used as a container for HTML elements - which is then styled with CSS or
+                    manipulated with JavaScript.</li>
+                <li><b>&#60;span&#62;: </b>The &#60;span&#62; tag is an inline container used to mark up a part of a
+                    text, or a part of a document.
+                    The &#60;span&#62; tag is easily styled by CSS or manipulated with JavaScript using the class or id
+                    attribute.</li>
+                <li><b>&#60;header&#62;: </b>The &#60;header&#62; element represents a container for introductory
+                    content or a set of navigational links.
+                    <br><br>
+                    <b>Note: </b>You can have several &#60;header&#62; elements in one HTML document. However,
+                    &#60;header&#62; cannot be placed within a &#60;footer&#62;, &#60;address&#62; or another
+                    &#60;header&#62; element.
+                </li>
+                <li><b>&#60;footer&#62;: </b>The &#60;footer&#62; tag defines a footer for a document or section.</li>
+
+            </ul>
+
+        </section>
+
+        <section role="region" aria-labelledby="attributes">
+            <header id="attributes">
+                <h2>Attributes</h2>
+            </header>
+            <p>HTML attributes provide additional information about HTML elements.</p>
+            <ul>
+                <li>All HTML elements can have attributes</li>
+                <li>Attributes provide additional information about elements</li>
+                <li>Attributes are always specified in the start tag</li>
+                <li>Attributes usually come in name/value pairs like: name="value"</li>
+            </ul>
+
+            <h3>The href Attribute:</h3>
+            <p>The &#60;a&#62; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes
+                to:</p>
+            <code class="code">&#60;a href="https://www.w3schools.com"&#62;Visit W3Schools&#60;/a&#62;</code>
+
+            <h3>The src Attribute:</h3>
+            <p>The &#60;img&#62; tag is used to embed an image in an HTML page. The src attribute specifies the path to
+                the
+                image to be displayed:</p>
+            <code class="code">&#60;img src="img_girl.jpg"&#62;</code>
+
+            <h3>The alt Attribute</h3>
+            <p>The required alt attribute for the &#60;img&#62; tag specifies an alternate text for an image, if the
+                image for
+                some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute,
+                or if the user uses a screen reader.</p>
+            <code class="code">&#60;img src="img_girl.jpg" alt="Girl with a jacket"&#62;</code>
+
+            <h3>Some other attributes</h3>
+            <ul>
+                <li>The width and height attributes of &#60;img&#62; provide size information for images</li>
+                <li>The style attribute is used to add styles to an element, such as color, font, size, and more</li>
+                <li>The lang attribute of the &#60;html&#62; tag declares the language of the Web page</li>
+                <li>The title attribute defines some extra information about an element</li>
+            </ul>
+
+        </section>
+
+
+        <section role="region" aria-labelledby="comments">
+            <header id="comments">
+                <h2>Comments</h2>
+            </header>
+            <p> The comment tag is used to insert comments in the source code. Comments are not displayed in the
+                browsers. <br>You can use comments to explain your code, which can help you when you edit the source
+                code at a later
+                date. This is especially useful if you have a lot of code.
+
+            </p>
+
+            <p>You can use the comment tag to "hide" scripts from browsers without support for scripts (so they don't
+                show them as plain text):</p>
+
+
+            <code class="code">&#60;script type="text/javascript"&#62; <br>
+                &#60;!-- <br>
+                function displayMsg() { <br>
+                  alert("Hello World!") <br>
+                } <br>
+                //--&#62; br
+                &#60;/script&#62; </code>
+        </section>
+
+
+        <section role="region" aria-labelledby="layout">
+            <header id="layout">
+                <h2>HTML Layout</h2>
+            </header>
+
+
+            <p>An HTML layout is a blueprint used to arrange web pages in a well-defined manner. It is easy to navigate,
+                simple to understand and uses HTML tags to customize web design elements. Crucial for any website, an
+                HTML layout that uses the correct format will easily improve a website's appearance.</p>
+            <img src="/img/layout.gif" alt="">
+            <ul>
+                <li><b>&#60;header&#62;</b> - Defines a header for a document or a section</li>
+                <li><b>&#60;nav&#62;</b>- Defines a set of navigation links</li>
+                <li><b>&#60;section&#62;</b> - Defines a section in a document</li>
+                <li><b>&#60;article&#62;</b> - Defines an independent, self-contained content</li>
+                <li><b>&#60;aside&#62;</b>- Defines content aside from the content (like a sidebar)</li>
+                <li><b>&#60;footer&#62;</b> - Defines a footer for a document or a section</li>
+                <li><b>&#60;details&#62;</b>- Defines additional details that the user can open and close on demand</li>
+
+            </ul>
+        </section>
+
+
+
+
+        <section role="region" aria-labelledby="example">
+            <header id="example">
+                <h2>Code Example</h2>
+            </header>s
+
+            <p>Here is the basic code portion of html.</p>
+
+            <code class="code">
+            &#60;!DOCTYPE html&#62; <br>
+            &#60;html&#62; <br>
+            &#60;body&#62; <br>
+ 
+            &#60;h1&#62;My First Heading&#62;/h1&#62; <br>
+            &#60;p&#62;My first paragraph.&#62;/p&#62; <br>
+
+            &#60;/body&#62; <br>
+            &#60;/html&#62; <br>
+        </code>
+
+        </section>
+
+        <section role="region" aria-labelledby="references">
+            <header>
+                <h2 id="references">References</h2>
+            </header>
+
+            <p>Most of text-content of this documentation is taken from:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Developer-Mozilla</a>
+                </li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">w3schools</a></li>
+            </ul>
+        </section>
+
+
+    </main>
+</body>
+
+<script src="/java.js">
+</script>
+
+</html>
